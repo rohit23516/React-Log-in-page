@@ -9,6 +9,7 @@ import ContactPage from './pages/contactpage'
 import UpdatePage from './pages/updatepage'
 import FieldFill from './pages/formicpage'
 import ErrorPage from './pages/formic page'
+import EditPage from './pages/editpage'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/update" element={<UpdatePage />} />
       <Route path="/field" element={<FieldFill />} />
+      <Route path="/field/:id" element={<EditPage/>} />
       <Route path="/error" element={<ErrorPage />} />
      </Routes>
     </BrowserRouter>
